@@ -1,0 +1,52 @@
+// * {
+// 	font-variation-settings: 'wght' var(--font-weight, 375),
+// 		'wdth' var(--font-width, 80);
+// }
+
+body {
+	font-size: 62.5%;
+	font-family: var(--font-montserrat);
+	color: var(--clr-neutral-900);
+	letter-spacing: -0.5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 700;
+	font-stretch: 100%;
+	line-height: 1.1;
+	color: var(--clr-neutral-800);
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4,
+.h4 {
+	font-size: --fs-500;
+}
+
+p {
+	font-size: 1rem;
+}
+
+a {
+	color: var(--clr, var(--clr-primary-400));
+
+	&:hover,
+	&:focus {
+		color: var(--clr-primary-400);
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.nav {
+	color: var(--clr-white);
+	flex-basis: 50%;
+
+	&__items {
+		@include flex(row, space-between, center);
+		list-style: none;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.spotlight {
+	color: var(--clr-white);
+	padding-block: 5rem;
+
+	&__cards {
+		@include flex(row, space-evenly, center);
+		flex-wrap: wrap;
+	}
+}

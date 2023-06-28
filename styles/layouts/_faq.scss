@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+.faq {
+	color: var(--clr-white);
+	padding-block: 5rem;
+
+	&__questions {
+		width: 85%;
+		background: rgba(255, 255, 255, 0.04);
+		box-shadow: rgba(207, 209, 211, 0.2) 0px 8px 14px;
+		margin: 3rem auto;
+		padding: 1rem;
+		border-radius: 1rem;
+	}
+
+	&__question {
+		padding: 0.8rem;
+		border-bottom: 1px solid #b9b9b90c;
+		@include flex(row, flex-start, center);
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+@use '../abstracts/' as *;
+
+.subscribe {
+	color: var(--clr-white);
+
+	@include flex(row, space-between, center);
+
+	&__text-content {
+		flex-basis: 50%;
+
+		& > h2 {
+			width: 15ch;
+			& > span {
+				color: var(--clr-yellow);
+			}
+		}
+	}
+
+	&__form-group {
+		position: relative;
+		margin-top: 1rem;
+		width: 80%;
+	}
+
+	&__input-form {
+		border-radius: 5rem;
+		border: 1px solid var(--clr-white);
+		background: rgba(255, 255, 255, 0.137);
+		padding: 0.8rem;
+		font-family: inherit;
+		font-size: 1rem;
+		width: 100%;
+	}
+
+	&__button {
+		background: var(--clr-white);
+		color: var(--clr-dark);
+		padding: 0.5rem 1.5rem;
+		border-radius: 5rem;
+		position: absolute;
+		right: 1%;
+		top: 8%;
+		border: 1px solid transparent;
+		font-size: 1rem;
+	}
+
+	&__form-attachments {
+		@include flex(row, center, flex-end);
+		position: absolute;
+	}
+
+	&__image {
+		background: linear-gradient(
+			180deg,
+			rgba(10, 20, 21, 0) 0%,
+			rgba(251, 210, 0, 0.3) 100%
+		);
+		border-radius: 2rem;
+
+		& > img {
+			opacity: 0.6;
+			border-radius: 2rem;
+		}
+	}
+}

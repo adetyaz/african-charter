@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.testimonial {
+	@include flex(row, space-between, center);
+	background: url('../../public/assets/images/background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	color: var(--clr-white);
+
+	& h2 {
+		> span {
+			display: block;
+		}
+
+		> span:nth-of-type(3) {
+			color: var(--clr-yellow);
+		}
+	}
+
+	&__cards {
+		@include flex(column, null, flex-start);
+		gap: 2rem;
+		flex-basis: 40%;
+	}
+
+	&__activity {
+		@include flex(row, center, flex-start);
+		gap: 0.5rem;
+		align-self: flex-end;
+	}
+
+	&__typing {
+		background-color: #49b5e5;
+		padding: 1.5rem;
+		border-radius: 1rem 0 1rem 1rem;
+		@include flex(row, center, flex-start);
+		gap: 0.5rem;
+
+		& > span {
+			display: block;
+			height: 0.8rem;
+			width: 0.8rem;
+			border-radius: 50%;
+			background: var(--clr-white);
+		}
+	}
+}

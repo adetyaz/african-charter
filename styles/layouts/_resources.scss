@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.resources {
+	padding-block: 5rem;
+	color: var(--clr-white);
+	background: url('../../public/assets/images/background.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	@include flex(row, space-between, center);
+	flex-wrap: wrap;
+
+	& h2 {
+		width: 10ch;
+	}
+}

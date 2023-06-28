@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+.testimonial-card {
+	@include flex(row, center, flex-start);
+	gap: 0.5rem;
+
+	&__avatar {
+		border-radius: 50%;
+	}
+
+	&__comment {
+		padding: 1.5rem;
+		color: var(--clr-white);
+		font-size: 0.8rem;
+		background: rgba(255, 255, 255, 0.116);
+		border: solid 1px var(--clr-white);
+		border-radius: 0 1rem 1rem;
+	}
+}

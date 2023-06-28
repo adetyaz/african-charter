@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.partners {
+	text-align: center;
+	color: var(--clr-white);
+	padding-block: 6rem;
+
+	&__cards {
+		@include flex(row, space-between, center);
+		margin-top: 2rem;
+	}
+
+	&__card {
+		padding: 1rem;
+		border: 1px solid var(--clr-white);
+		@include flex(row, center, center);
+		gap: 1rem;
+
+		&__span {
+		}
+	}
+}

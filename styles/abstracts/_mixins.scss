@@ -1,0 +1,83 @@
+@use 'breakpoints' as *;
+
+@mixin mq($key) {
+	$size: map-get($breakpoints, $key);
+
+	@media only screen and (min-width: $size) {
+		@content;
+	}
+}
+
+@mixin pseudo(
+	$loc: before,
+	$content: '',
+	$pos: absolute,
+	$top: 0,
+	$bottom: 0,
+	$left: 0,
+	$right: 0
+) {
+	position: relative;
+
+	&::#{$loc} {
+		content: $content;
+		position: $pos;
+		top: $top;
+		bottom: $bottom;
+		left: $left;
+		right: $right;
+		@content;
+	}
+}
+
+@mixin hover-lift() {
+	transition: transform 350ms ease-in-out;
+	box-shadow: 0 0.25em 0.5em 0 rgba(black, 0.2);
+
+	@include pseudo($loc: before) {
+		box-shadow: 0 0 1.25em 0 rgba(black, 0.4);
+		transition: transform 350ms ease-in-out;
+		opacity: 0;
+	}
+
+	&:hover,
+	&:focus {
+		transform: scale(1.05);
+
+		&::before {
+			opacity: 1;
+		}
+	}
+}
+
+@mixin flex(
+	$flex-direction: row,
+	$justify-content: flex-start,
+	$align-items: stretch
+) {
+	display: flex;
+
+	@if $flex-direction != null {
+		flex-direction: $flex-direction;
+	}
+
+	@if $justify-content != null {
+		justify-content: $justify-content;
+	}
+
+	@if $align-items != null {
+		align-items: $align-items;
+	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+
+		@if $justify-content == null {
+			justify-content: center;
+		}
+
+		@if $align-items == null {
+			align-items: center;
+		}
+	}
+}
