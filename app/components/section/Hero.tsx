@@ -1,21 +1,7 @@
 import Image from 'next/image'
+import { cardImages } from '@/app/constants'
 
 const Hero = () => {
-	const cardImages = [
-		{
-			source: '/assets/images/card-1.png',
-		},
-		{
-			source: '/assets/images/card-2.png',
-		},
-		{
-			source: '/assets/images/card-3.png',
-		},
-		{
-			source: '/assets/images/card-4.png',
-		},
-	]
-
 	return (
 		<section className='hero'>
 			<h1>

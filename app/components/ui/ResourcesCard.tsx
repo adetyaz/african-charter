@@ -1,8 +1,10 @@
+import getIcon from '@/app/utils/getIcons'
+
 type Props = {
 	id: string
 	text: string
 	tag: string
-	icon: React.ReactElement
+	icon: string
 }
 
 const ResourcesCard = ({ id, text, tag, icon }: Props) => {
@@ -10,7 +12,7 @@ const ResourcesCard = ({ id, text, tag, icon }: Props) => {
 		<div className='resources-card'>
 			<div className='resources-card__number'>
 				<h3>{id}</h3>
-				{icon}
+				{/* { getIcon(icon)} */}
 			</div>
 			<p>{text}</p>
 

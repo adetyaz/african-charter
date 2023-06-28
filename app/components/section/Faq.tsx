@@ -1,21 +1,7 @@
 import RightArrowIcon from '../icons/RightArrowIcon'
+import { questions } from '@/app/constants'
 
 const Faq = () => {
-	const questions = [
-		{
-			text: 'How easy can I get resources?',
-		},
-		{
-			text: 'Are the resources free?',
-		},
-		{
-			text: 'Do we get custom requests?',
-		},
-		{
-			text: 'How discreet can it be?',
-		},
-	]
-
 	return (
 		<section className='faq'>
 			<h2>Have questions?</h2>

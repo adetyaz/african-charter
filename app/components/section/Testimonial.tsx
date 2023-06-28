@@ -1,22 +1,8 @@
 import Image from 'next/image'
 import TestimonialCard from '../ui/TestimonialCard'
+import { testimonials } from '@/app/constants'
 
 const Testimonial = () => {
-	const testimonials = [
-		{
-			image: '/assets/images/avatar-1.png',
-			text: 'I’m trying to get data on the last Kenyan election.',
-		},
-		{
-			image: '/assets/images/avatar-2.png',
-			text: 'I’m currently working on a platform that monitors how money is spent within the confines of election in Niger...',
-		},
-		{
-			image: '/assets/images/avatar-3.png',
-			text: 'The data on how the youth in Africa are dominating the tech scene is....',
-		},
-	]
-
 	return (
 		<section className='testimonial'>
 			<h2>

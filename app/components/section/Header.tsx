@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Navbar from '../ui/Navbar'
+import { Navbar } from '../ui'
 
 const Header = () => {
 	return (

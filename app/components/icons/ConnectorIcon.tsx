@@ -1,4 +1,4 @@
-const Connector = () => {
+const ConnectorIcon = () => {
 	return (
 		<svg
 			width='85'
@@ -50,4 +50,4 @@ const Connector = () => {
 	)
 }
 
-export default Connector
+export default ConnectorIcon

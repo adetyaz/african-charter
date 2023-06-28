@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Connector from '../icons/Connector'
+import { ConnectorIcon } from '../icons'
 
 const Subscribe = () => {
 	return (
@@ -19,7 +19,7 @@ const Subscribe = () => {
 						Get Started
 					</button>
 					<div className='subscribe__form-attachments'>
-						<Connector />
+						<ConnectorIcon />
 						<span>Join 80+ organisations</span>
 						<div>
 							<Image

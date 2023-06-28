@@ -1,25 +1,6 @@
-const Navbar = () => {
-	const navLinks = [
-		{
-			link: 'About',
-		},
-		{
-			link: 'Expertise',
-		},
-		{
-			link: 'Insights',
-		},
-		{
-			link: 'Careers',
-		},
-		{
-			link: 'Projects',
-		},
-		{
-			link: 'Contact',
-		},
-	]
+import { navLinks } from '@/app/constants'
 
+const Navbar = () => {
 	return (
 		<nav className='nav'>
 			<ul className='nav__items'>
