@@ -67,9 +67,9 @@ const ProfileIcon = () => {
 					width='52.7747'
 					height='58.7876'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='6.5' />
 					<feComposite
 						in2='SourceAlpha'
@@ -90,9 +90,9 @@ const ProfileIcon = () => {
 					width='42.3474'
 					height='33.4307'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -111,9 +111,9 @@ const ProfileIcon = () => {
 					width='38.9167'
 					height='38.9167'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -132,9 +132,9 @@ const ProfileIcon = () => {
 					width='67.1135'
 					height='75'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='7.5' />
 					<feComposite
 						in2='SourceAlpha'
@@ -156,8 +156,8 @@ const ProfileIcon = () => {
 					y2='39.8559'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stop-color='#FFA78F' />
-					<stop offset='1' stop-color='#F23E2C' />
+					<stop stopColor='#FFA78F' />
+					<stop offset='1' stopColor='#F23E2C' />
 				</linearGradient>
 				<linearGradient
 					id='paint1_linear_106_89'
@@ -167,8 +167,8 @@ const ProfileIcon = () => {
 					y2='41.3862'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stop-color='white' stop-opacity='0.25' />
-					<stop offset='1' stop-color='white' stop-opacity='0' />
+					<stop stopColor='white' stopOpacity='0.25' />
+					<stop offset='1' stopColor='white' stopOpacity='0' />
 				</linearGradient>
 			</defs>
 		</svg>

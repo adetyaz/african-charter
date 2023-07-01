@@ -3,6 +3,7 @@
 .nav {
 	color: var(--clr-white);
 	flex-basis: 50%;
+	font-size: 0.8rem;
 
 	&__items {
 		@include flex(row, space-between, center);

@@ -1,12 +1,8 @@
 @use '../abstracts' as *;
+@use '../utilities' as *;
 
 .tools {
-	padding-block: 5rem;
-	color: var(--clr-white);
-	background: url('../../public/assets/images/background.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
+	@extend %pattern-background;
 	position: relative;
 
 	&__chart {

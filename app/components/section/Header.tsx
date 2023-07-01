@@ -7,8 +7,8 @@ const Header = () => {
 			<Image
 				src='/assets/images/charter-logo-1.png'
 				alt='logo'
-				height={50}
-				width={150}
+				height={30}
+				width={100}
 			/>
 			<Navbar />
 		</header>

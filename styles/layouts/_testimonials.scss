@@ -1,12 +1,9 @@
 @use '../abstracts' as *;
+@use '../utilities' as *;
 
 .testimonial {
 	@include flex(row, space-between, center);
-	background: url('../../public/assets/images/background.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 80%;
-	color: var(--clr-white);
+	@extend %pattern-background;
 
 	& h2 {
 		> span {

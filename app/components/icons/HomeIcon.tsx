@@ -58,7 +58,7 @@ const HomeIcon = () => {
 					width='55.4243'
 					height='55.7729'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
 					<feFlood flood-opacity='0' result='BackgroundImageFix' />
 					<feBlend
@@ -79,7 +79,7 @@ const HomeIcon = () => {
 					width='82.1497'
 					height='83.8418'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
 					<feFlood flood-opacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='12' />
@@ -102,7 +102,7 @@ const HomeIcon = () => {
 					width='46.0891'
 					height='35.3152'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
 					<feFlood flood-opacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='7.5' />

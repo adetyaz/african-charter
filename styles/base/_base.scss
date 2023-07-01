@@ -5,5 +5,10 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	background: var(--clr-dark);
-	padding: 3rem 6rem;
+	padding: 3rem 8rem;
+}
+
+section {
+	padding-block: 6rem;
+	color: var(--clr-white);
 }

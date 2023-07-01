@@ -7,7 +7,7 @@ const RightArrowIcon = () => {
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
-			<g opacity='0.2' clip-path='url(#clip0_136_174)'>
+			<g opacity='0.2' clipPath='url(#clip0_136_174)'>
 				<path
 					d='M30.5 4.5498L36.75 10.7998L30.5 17.0498'
 					stroke='white'

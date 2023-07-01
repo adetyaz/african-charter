@@ -20,33 +20,33 @@ const DocumentIcon = () => {
 					rx='9.34404'
 					transform='rotate(-105 31.3066 44.8977)'
 					fill='#8237FF'
-					fill-opacity='0.5'
+					fillOpacity='0.5'
 				/>
 			</g>
 			<g filter='url(#filter1_b_108_151)'>
 				<path
 					d='M53.7823 22.9502H39.4605C34.2656 22.9502 31.241 25.9919 31.241 31.2039V48.8562C31.241 54.1537 34.2656 57.127 39.4605 57.127H53.7823C59.0609 57.127 62.0001 54.1537 62.0001 48.8562V31.2039C62.0001 25.9919 59.0609 22.9502 53.7823 22.9502Z'
 					fill='#BA90FF'
-					fill-opacity='0.35'
+					fillOpacity='0.35'
 				/>
 				<path
 					d='M53.7823 22.4502H39.4605C36.7659 22.4502 34.5702 23.241 33.0483 24.7698C31.5267 26.2983 30.741 28.502 30.741 31.2039V48.8562C30.741 51.599 31.5257 53.8083 33.0491 55.3317C34.5725 56.8551 36.7689 57.627 39.4605 57.627H53.7823C56.5139 57.627 58.7117 56.8561 60.2256 55.3303C61.7389 53.8052 62.5001 51.5952 62.5001 48.8562V31.2039C62.5001 28.5058 61.7379 26.3014 60.2264 24.7712C58.714 23.24 56.5169 22.4502 53.7823 22.4502Z'
 					stroke='url(#paint1_linear_108_151)'
-					stroke-linecap='round'
-					stroke-linejoin='round'
+					strokeLinecap='round'
+					strokeLinejoin='round'
 				/>
 			</g>
 			<g filter='url(#filter2_bd_108_151)'>
 				<mask id='path-5-inside-1_108_151' fill='white'>
 					<path
-						fill-rule='evenodd'
-						clip-rule='evenodd'
+						fillRule='evenodd'
+						clipRule='evenodd'
 						d='M39.9219 30.897V30.9141C39.1854 30.9141 38.589 31.5122 38.589 32.247C38.589 32.9818 39.1854 33.5799 39.9219 33.5799H45.0296C45.7661 33.5799 46.3642 32.9818 46.3642 32.2282C46.3642 31.4951 45.7661 30.897 45.0296 30.897H39.9219ZM53.3192 41.3041H39.9219C39.1854 41.3041 38.589 40.706 38.589 39.9712C38.589 39.2364 39.1854 38.6366 39.9219 38.6366H53.3192C54.054 38.6366 54.6521 39.2364 54.6521 39.9712C54.6521 40.706 54.054 41.3041 53.3192 41.3041ZM53.3193 49.1134H39.922C39.4093 49.1818 38.9138 48.9254 38.6404 48.4982C38.3669 48.0539 38.3669 47.49 38.6404 47.0628C38.9138 46.6185 39.4093 46.3793 39.922 46.4305H53.3193C54.0011 46.4989 54.5155 47.0799 54.5155 47.7805C54.5155 48.4623 54.0011 49.0451 53.3193 49.1134Z'
 					/>
 				</mask>
 				<path
-					fill-rule='evenodd'
-					clip-rule='evenodd'
+					fillRule='evenodd'
+					clipRule='evenodd'
 					d='M39.9219 30.897V30.9141C39.1854 30.9141 38.589 31.5122 38.589 32.247C38.589 32.9818 39.1854 33.5799 39.9219 33.5799H45.0296C45.7661 33.5799 46.3642 32.9818 46.3642 32.2282C46.3642 31.4951 45.7661 30.897 45.0296 30.897H39.9219ZM53.3192 41.3041H39.9219C39.1854 41.3041 38.589 40.706 38.589 39.9712C38.589 39.2364 39.1854 38.6366 39.9219 38.6366H53.3192C54.054 38.6366 54.6521 39.2364 54.6521 39.9712C54.6521 40.706 54.054 41.3041 53.3192 41.3041ZM53.3193 49.1134H39.922C39.4093 49.1818 38.9138 48.9254 38.6404 48.4982C38.3669 48.0539 38.3669 47.49 38.6404 47.0628C38.9138 46.6185 39.4093 46.3793 39.922 46.4305H53.3193C54.0011 46.4989 54.5155 47.0799 54.5155 47.7805C54.5155 48.4623 54.0011 49.0451 53.3193 49.1134Z'
 					fill='url(#paint2_linear_108_151)'
 				/>
@@ -64,9 +64,9 @@ const DocumentIcon = () => {
 					width='73.5676'
 					height='75.9583'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -85,9 +85,9 @@ const DocumentIcon = () => {
 					width='80.759'
 					height='84.1768'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='12' />
 					<feComposite
 						in2='SourceAlpha'
@@ -108,9 +108,9 @@ const DocumentIcon = () => {
 					width='46.2168'
 					height='48.2273'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='7.5' />
 					<feComposite
 						in2='SourceAlpha'
@@ -149,8 +149,8 @@ const DocumentIcon = () => {
 					y2='48.9929'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stop-color='#BC94FF' />
-					<stop offset='1' stop-color='#9F66FF' />
+					<stop stopColor='#BC94FF' />
+					<stop offset='1' stopColor='#9F66FF' />
 				</linearGradient>
 				<linearGradient
 					id='paint1_linear_108_151'
@@ -160,8 +160,8 @@ const DocumentIcon = () => {
 					y2='51.6454'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stop-color='white' stop-opacity='0.25' />
-					<stop offset='1' stop-color='white' stop-opacity='0' />
+					<stop stopColor='white' stopOpacity='0.25' />
+					<stop offset='1' stopColor='white' stopOpacity='0' />
 				</linearGradient>
 				<linearGradient
 					id='paint2_linear_108_151'
@@ -171,8 +171,8 @@ const DocumentIcon = () => {
 					y2='34.7126'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stop-color='white' />
-					<stop offset='1' stop-color='white' stop-opacity='0.2' />
+					<stop stopColor='white' />
+					<stop offset='1' stopColor='white' stopOpacity='0.2' />
 				</linearGradient>
 				<linearGradient
 					id='paint3_linear_108_151'
@@ -182,8 +182,8 @@ const DocumentIcon = () => {
 					y2='46.0653'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stop-color='white' stop-opacity='0.25' />
-					<stop offset='1' stop-color='white' stop-opacity='0' />
+					<stop stopColor='white' stop-opacity='0.25' />
+					<stop offset='1' stopColor='white' stopOpacity='0' />
 				</linearGradient>
 			</defs>
 		</svg>

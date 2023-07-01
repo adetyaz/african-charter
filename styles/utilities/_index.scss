@@ -1,0 +1,78 @@
+%pattern-background {
+	background: url('../../public/assets/images/background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+%transparent-font {
+	-webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.096);
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	font-size: 6rem;
+	text-transform: uppercase;
+}
+
+%green-gradient {
+	background: linear-gradient(
+		328.87deg,
+		rgba(0, 191, 109, 0.48) 1.88%,
+		rgba(0, 191, 109, 0) 49.47%,
+		rgba(217, 217, 217, 0) 57.4%,
+		rgba(217, 217, 217, 0) 62.83%,
+		rgba(217, 217, 217, 0) 71.23%,
+		rgba(217, 217, 217, 0) 81.34%,
+		rgba(217, 217, 217, 0) 100%
+	);
+}
+
+%tomato-gradient {
+	background: linear-gradient(
+		315deg,
+		#ff94734f,
+		rgba(88, 89, 200, 0) 48.5%,
+		rgba(217, 217, 217, 0) 56.58%,
+		rgba(217, 217, 217, 0) 62.12%,
+		rgba(217, 217, 217, 0) 70.67%,
+		rgba(217, 217, 217, 0) 80.98%,
+		rgba(217, 217, 217, 0) 100%
+	);
+}
+
+%blue-gradient {
+	background: linear-gradient(
+		328.87deg,
+		rgba(88, 89, 200, 0.48) 1.88%,
+		rgba(88, 89, 200, 0) 49.47%,
+		rgba(217, 217, 217, 0) 57.4%,
+		rgba(217, 217, 217, 0) 62.83%,
+		rgba(217, 217, 217, 0) 71.23%,
+		rgba(217, 217, 217, 0) 81.34%,
+		rgba(217, 217, 217, 0) 100%
+	);
+}
+
+%purple-gradient {
+	background: linear-gradient(
+		315deg,
+		#de73ff4f,
+		rgba(88, 89, 200, 0) 48.5%,
+		rgba(217, 217, 217, 0) 56.58%,
+		rgba(217, 217, 217, 0) 62.12%,
+		rgba(217, 217, 217, 0) 70.67%,
+		rgba(217, 217, 217, 0) 80.98%,
+		rgba(217, 217, 217, 0) 100%
+	);
+}
+
+%white-gradient {
+	background: linear-gradient(
+		315deg,
+		rgba(255, 255, 255, 0.48) 0%,
+		rgba(255, 255, 255, 0) 48.5%,
+		rgba(217, 217, 217, 0) 56.58%,
+		rgba(217, 217, 217, 0) 62.12%,
+		rgba(217, 217, 217, 0) 70.67%,
+		rgba(217, 217, 217, 0) 80.98%,
+		rgba(217, 217, 217, 0) 100%
+	);
+}

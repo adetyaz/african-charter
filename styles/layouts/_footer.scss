@@ -3,7 +3,6 @@
 .footer {
 	border-top: 1px solid var(--clr-white);
 	color: var(--clr-white);
-	padding-block: 4rem;
 
 	&__items {
 		@include flex(row, space-around, center);
