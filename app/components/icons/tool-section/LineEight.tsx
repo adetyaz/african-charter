@@ -4,7 +4,7 @@ const LineEight = () => {
 			width='148'
 			height='27'
 			viewBox='0 0 148 27'
-			fill='nEight'
+			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
 			<path

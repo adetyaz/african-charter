@@ -4,6 +4,7 @@
 .tools {
 	@extend %pattern-background;
 	position: relative;
+	padding-block: 10rem;
 
 	&__chart {
 		background: linear-gradient(
@@ -22,8 +23,142 @@
 	&__node {
 		position: absolute;
 
+		& p {
+			font-size: 0.8rem;
+		}
+
 		&--1 {
-			@include flex();
+			@extend %center-col-flex;
+			left: 42%;
+			top: 14.5%;
+
+			& > div {
+				text-align: center;
+				& h4 {
+					color: #feb7a6;
+				}
+			}
+		}
+
+		&--2 {
+			@extend %center-flex;
+			right: 4%;
+			top: 30.5%;
+
+			& > div {
+				& h4 {
+					color: #fcdf4c;
+				}
+			}
+		}
+
+		&--3 {
+			@extend %center-flex;
+			right: 4%;
+			top: 47%;
+
+			& > div {
+				& h4 {
+					color: #bbe4c1;
+				}
+
+				& span {
+					display: block;
+				}
+			}
+		}
+
+		&--4 {
+			@extend %center-flex;
+			left: 8%;
+			top: 26.5%;
+
+			& > div {
+				& h4 {
+					color: #ac8d9b;
+				}
+
+				& span {
+					display: block;
+				}
+			}
+		}
+
+		&--5 {
+			@extend %center-flex;
+			left: -4%;
+			top: 38%;
+
+			& > div {
+				& h4 {
+					color: #cac8fd;
+				}
+
+				& span {
+					display: block;
+				}
+			}
+		}
+
+		&--6 {
+			@extend %center-flex;
+			left: -1.8%;
+			bottom: 35%;
+
+			& > div {
+				& h4 {
+					color: #ffaab0;
+				}
+
+				& span {
+					display: block;
+				}
+			}
+		}
+
+		&--7 {
+			@extend %center-flex;
+			left: 11%;
+			bottom: 22.3%;
+
+			& > div {
+				& h4 {
+					color: #8f8686;
+				}
+
+				& span {
+					display: block;
+				}
+			}
+		}
+
+		&--8 {
+			@extend %center-col-flex;
+			left: 47%;
+			bottom: 11%;
+
+			& > div {
+				text-align: center;
+				& h4 {
+					color: #dfa4e8;
+				}
+			}
+		}
+
+		&--9 {
+			@extend %center-flex;
+			right: 5.5%;
+			bottom: 27%;
+
+			& > div {
+				& h4 {
+					color: #875e73;
+				}
+
+				& span {
+					display: block;
+				}
+			}
 		}
 	}
 }

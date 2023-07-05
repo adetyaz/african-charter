@@ -3,7 +3,13 @@
 .hero {
 	color: var(--clr-white);
 	text-align: center;
-	padding-block: 4rem;
+	position: relative;
+	background: #121212;
+
+	& > *:not(:first-child) {
+		position: relative;
+		z-index: 5;
+	}
 
 	& h1 > span:nth-of-type(1),
 	& p > span:nth-of-type(1) {
@@ -21,5 +27,12 @@
 	&__images {
 		@include flex(row, center, center);
 		gap: 5rem;
+	}
+
+	&__blob {
+		position: absolute;
+		z-index: 1;
+
+		animation: bouncingBlob 4s alternate infinite linear;
 	}
 }

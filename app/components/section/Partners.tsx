@@ -8,13 +8,15 @@ const Partners = () => {
 			<div className='partners__cards'>
 				{partners.map((partner) => (
 					<div className='partners__card'>
-						<Image
-							src={partner.image}
-							alt={partner.name}
-							key={partner.name}
-							height={30}
-							width={30}
-						/>
+						{partner.image && (
+							<Image
+								src={partner.image}
+								alt={partner.name}
+								key={partner.name}
+								height={30}
+								width={30}
+							/>
+						)}
 						<span>{partner.name}</span>
 					</div>
 				))}

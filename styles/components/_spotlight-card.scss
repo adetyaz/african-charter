@@ -11,7 +11,9 @@
 	margin-block: 2rem;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 	@include flex(column, space-between, flex-start);
+	transition: all 2s ease-out;
 
 	& > div:nth-of-type(1) {
 		display: flex;
@@ -22,6 +24,10 @@
 	&:nth-of-type(1) {
 		@extend %blue-gradient;
 
+		&:hover {
+			@extend %blue-gradient-hover;
+		}
+
 		& > div > div {
 			color: var(--clr-blue);
 		}
@@ -29,6 +35,10 @@
 
 	&:nth-of-type(2) {
 		@extend %tomato-gradient;
+
+		&:hover {
+			@extend %tomato-gradient-hover;
+		}
 
 		& > div > div {
 			color: var(--clr-tomato);
@@ -38,6 +48,10 @@
 	&:nth-of-type(3) {
 		@extend %green-gradient;
 
+		&:hover {
+			@extend %green-gradient-hover;
+		}
+
 		& > div > div {
 			color: var(--clr-green);
 		}
@@ -45,6 +59,10 @@
 
 	&:nth-of-type(4) {
 		@extend %white-gradient;
+
+		&:hover {
+			@extend %white-gradient-hover;
+		}
 	}
 
 	&__tagline {
@@ -64,9 +82,34 @@
 		padding: 1rem;
 		width: 3.5rem;
 		height: 3.5rem;
-		background: rgb(26 25 25 / 68%);
+		background: rgba(26, 25, 25, 0.534);
 		border-radius: 50%;
 		margin-top: 1rem;
+		display: flex;
+		gap: 1rem;
+		text-transform: uppercase;
+		transition: all 0s ease-out;
+
+		& p {
+			display: none;
+		}
+	}
+
+	&:hover &__icon-wrapper {
+		width: fit-content;
+		border-radius: 5rem;
+
+		& > p {
+			display: block;
+		}
+	}
+
+	&__icon {
+		transition: all 0.5s ease-in-out;
+	}
+
+	&:hover &__icon {
+		transform: rotate(45deg);
 	}
 
 	&__backText {
@@ -76,6 +119,11 @@
 		font-weight: 400;
 		position: absolute;
 		bottom: 15%;
+		transition: all 0.5s ease-in-out;
+	}
+
+	&:hover &__backText {
+		transform: translateX(-30%);
 	}
 
 	&__image {

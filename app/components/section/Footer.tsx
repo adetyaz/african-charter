@@ -20,7 +20,7 @@ const Footer = () => {
 				<Image
 					src='/assets/images/charter-logo-2.png'
 					alt='footer logo'
-					height={100}
+					height={50}
 					width={150}
 				/>
 				<div className='footer__text-items'>

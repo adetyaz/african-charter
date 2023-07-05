@@ -1,0 +1,35 @@
+@keyframes bouncingBlob {
+	0% {
+		top: 0;
+		left: 0%;
+	}
+	30% {
+		top: 20%;
+		left: 35%;
+		transform: rotate(random(360) + deg);
+	}
+
+	60% {
+		top: 40%;
+		left: 55%;
+		transform: rotate(random(360) + deg);
+	}
+
+	80% {
+		top: 30%;
+		left: 80%;
+		transform: rotate(random(360) + deg);
+	}
+	100% {
+		top: 0;
+		left: 100%;
+		transform: rotate(random(360) + deg);
+	}
+}
+
+@keyframes pulse {
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+}

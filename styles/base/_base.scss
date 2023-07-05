@@ -6,6 +6,20 @@ body {
 	grid-template-rows: auto 1fr auto;
 	background: var(--clr-dark);
 	padding: 3rem 8rem;
+	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: rgba(128, 255, 0, 0);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba(130, 130, 131, 0.452);
+		border-radius: 2rem;
+	}
 }
 
 section {

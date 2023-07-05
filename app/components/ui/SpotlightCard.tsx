@@ -43,7 +43,8 @@ const SpotlightCard = ({
 					</>
 				)}
 				<div className='spotlight-card__icon-wrapper'>
-					<ArrowIcon />
+					<ArrowIcon className='spotlight-card__icon' />
+					<p>learn more</p>
 				</div>
 			</div>
 

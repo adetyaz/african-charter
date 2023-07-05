@@ -5,6 +5,7 @@ import { testimonials } from '@/app/constants'
 const Testimonial = () => {
 	return (
 		<section className='testimonial'>
+			<div className='testimonial__blob'></div>
 			<h2>
 				<span>The African Charter </span>
 				<span>Project is all about</span>

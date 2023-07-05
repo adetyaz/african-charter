@@ -14,8 +14,57 @@
 		border: 1px solid var(--clr-white);
 		@include flex(row, center, center);
 		gap: 1rem;
+		border-radius: 0.5rem;
+		width: 10rem;
+		height: 4rem;
+		position: relative;
 
-		&__span {
+		&:first-child {
+			clip-path: polygon(
+				0 0,
+				100% 0,
+				100% 20%,
+				100% 100%,
+				80% 100%,
+				18% 99%,
+				0 70%,
+				0% 20%
+			);
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 3.9rem;
+				background: white;
+				transform: rotate(123deg);
+				left: 6%;
+				bottom: -33%;
+			}
+		}
+
+		&:last-child {
+			clip-path: polygon(
+				0 0,
+				100% 0,
+				100% 20%,
+				100% 70%,
+				80% 100%,
+				0 100%,
+				0 70%,
+				0% 20%
+			);
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 2.5px;
+				height: 3.9rem;
+				background: white;
+				transform: rotate(59deg);
+				right: 6%;
+				bottom: -33%;
+			}
 		}
 	}
 }

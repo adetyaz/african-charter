@@ -1,4 +1,8 @@
-const ArrowIcon = () => {
+type Props = {
+	className: string
+}
+
+const ArrowIcon = ({ className }: Props) => {
 	return (
 		<svg
 			width='24'
@@ -6,6 +10,7 @@ const ArrowIcon = () => {
 			viewBox='0 0 24 25'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
+			className={className}
 		>
 			<g id='Frame'>
 				<g id='Group'>

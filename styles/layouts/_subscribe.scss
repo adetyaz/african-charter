@@ -2,8 +2,8 @@
 
 .subscribe {
 	color: var(--clr-white);
-
 	@include flex(row, space-between, center);
+	flex-wrap: wrap;
 
 	&__text-content {
 		flex-basis: 50%;
