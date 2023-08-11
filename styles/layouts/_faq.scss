@@ -17,6 +17,7 @@
 		padding: 1rem;
 		border-bottom: 1px solid #acabab33;
 		@include flex(row, flex-start, center);
+		flex-direction: row !important;
 
 		&:last-child {
 			border-bottom: none;

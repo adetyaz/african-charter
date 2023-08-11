@@ -5,8 +5,16 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	background: var(--clr-dark);
-	padding: 3rem 8rem;
+	padding: 2rem;
 	overflow-x: hidden;
+
+	@include mq(small) {
+		padding: 3rem 5rem;
+	}
+
+	@include mq(medium) {
+		padding: 3rem 8rem;
+	}
 
 	&::-webkit-scrollbar {
 		width: 8px;
@@ -25,4 +33,24 @@ body {
 section {
 	padding-block: 6rem;
 	color: var(--clr-white);
+}
+
+html.lenis {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
 }

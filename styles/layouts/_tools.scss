@@ -12,8 +12,8 @@
 			#242540 0%,
 			rgba(19, 19, 19, 0.267) 100%
 		);
-		height: 47.5rem;
-		width: 47.5rem;
+		height: calc(47rem - 1vh);
+		width: calc(47rem - 1vw);
 		border-radius: 50%;
 		margin-block: 4rem;
 		margin-inline: auto;
@@ -22,6 +22,11 @@
 
 	&__node {
 		position: absolute;
+		display: none;
+
+		@include mq(small) {
+			display: block;
+		}
 
 		& p {
 			font-size: 0.8rem;

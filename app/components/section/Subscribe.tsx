@@ -25,8 +25,8 @@ const Subscribe = () => {
 							<Image
 								src='/assets/images/avatars.png'
 								alt='avatars'
-								width={50}
-								height={20}
+								width={80}
+								height={30}
 							/>
 						</div>
 					</div>

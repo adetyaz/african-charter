@@ -4,13 +4,37 @@
 	color: var(--clr-white);
 	flex-basis: 50%;
 	font-size: 0.8rem;
+	display: none;
+	@include mq(small) {
+		display: block;
+	}
 
 	&__items {
 		@include flex(row, space-between, center);
+
 		list-style: none;
 	}
 
 	&__link {
 		text-decoration: none;
+		cursor: pointer;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 0;
+			height: 0.5px;
+			background: rgba(231, 231, 231, 0.603);
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			border-radius: 1rem;
+			transition: all 1s ease;
+		}
+
+		&:hover::before {
+			width: 100%;
+			transform-origin: right;
+		}
 	}
 }

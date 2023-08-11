@@ -18,6 +18,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body
 				className={`${inter.variable} ${montserrat.variable} ${assistant.variable}`}
+				suppressHydrationWarning={true}
 			>
 				{children}
 			</body>

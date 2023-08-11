@@ -20,7 +20,7 @@ export { default as LineOne } from './tool-section/LineOne'
 export { default as LineTwo } from './tool-section/LineTwo'
 export { default as LineThree } from './tool-section/LineThree'
 export { default as LineFour } from './tool-section/LineFour'
-export { default as LineFive } from './tool-section/LineFive'
+
 export { default as LineSix } from './tool-section/LineSix'
 export { default as LineSeven } from './tool-section/LineSeven'
 export { default as LineEight } from './tool-section/LineEight'

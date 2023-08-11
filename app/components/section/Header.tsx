@@ -11,6 +11,7 @@ const Header = () => {
 				width={100}
 			/>
 			<Navbar />
+			<div className='toggle'></div>
 		</header>
 	)
 }

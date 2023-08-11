@@ -2,14 +2,21 @@
 
 .subscribe {
 	color: var(--clr-white);
-	@include flex(row, space-between, center);
-	flex-wrap: wrap;
+	@include flex(row, center, center);
+
+	@include mq(small) {
+		@include flex(row, space-between, center);
+	}
 
 	&__text-content {
 		flex-basis: 50%;
 
 		& > h2 {
-			width: 15ch;
+			width: 30ch;
+			@include mq(small) {
+				width: 15ch;
+			}
+
 			& > span {
 				color: var(--clr-yellow);
 			}
@@ -18,8 +25,13 @@
 
 	&__form-group {
 		position: relative;
-		margin-top: 1rem;
+		margin-block: 2rem;
+		margin-inline: auto;
 		width: 80%;
+
+		@include mq(small) {
+			margin-inline: unset;
+		}
 	}
 
 	&__input-form {
@@ -46,6 +58,7 @@
 
 	&__form-attachments {
 		@include flex(row, center, flex-end);
+		flex-direction: row !important;
 		position: absolute;
 	}
 
@@ -56,6 +69,7 @@
 			rgba(251, 210, 0, 0.3) 100%
 		);
 		border-radius: 2rem;
+		margin-block: 2rem;
 
 		& > img {
 			opacity: 0.6;

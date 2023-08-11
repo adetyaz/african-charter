@@ -2,4 +2,11 @@
 
 .header {
 	@include flex(row, space-between, center);
+	flex-direction: row !important;
+}
+
+.toggle {
+	@include mq(small) {
+		display: none;
+	}
 }

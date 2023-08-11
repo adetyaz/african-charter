@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import TestimonialCard from '../ui/TestimonialCard'
 import { testimonials } from '@/app/constants'
@@ -12,7 +13,7 @@ const Testimonial = () => {
 				<span>Open-Source</span>
 			</h2>
 			<div className='testimonial__cards'>
-				{testimonials.map((testimonial) => (
+				{testimonials.map((testimonial, index) => (
 					<TestimonialCard
 						text={testimonial.text}
 						image={testimonial.image}

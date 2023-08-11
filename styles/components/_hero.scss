@@ -25,8 +25,12 @@
 	}
 
 	&__images {
-		@include flex(row, center, center);
+		display: none;
 		gap: 5rem;
+
+		@include mq(small) {
+			@include flex(row, center, center);
+		}
 	}
 
 	&__blob {
@@ -35,4 +39,30 @@
 
 		animation: bouncingBlob 4s alternate infinite linear;
 	}
+
+	&__mobile-carousel {
+		display: none;
+		@include mq(small) {
+			display: none;
+		}
+	}
+}
+
+.swiper {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: none;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
 }

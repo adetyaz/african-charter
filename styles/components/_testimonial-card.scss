@@ -2,6 +2,7 @@
 
 .testimonial-card {
 	@include flex(row, center, flex-start);
+	flex-direction: row !important;
 	gap: 0.5rem;
 
 	&__avatar {
@@ -9,11 +10,15 @@
 	}
 
 	&__comment {
-		padding: 1.5rem;
+		padding: 1rem;
 		color: var(--clr-white);
 		font-size: 0.8rem;
 		background: rgba(255, 255, 255, 0.116);
 		border: solid 1px var(--clr-white);
 		border-radius: 0 1rem 1rem;
+
+		@include mq(small) {
+			padding: 1.5rem;
+		}
 	}
 }

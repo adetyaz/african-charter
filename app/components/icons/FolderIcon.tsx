@@ -1,4 +1,8 @@
-const FolderIcon = () => {
+type Props = {
+	className: string
+}
+
+const FolderIcon = ({ className }: Props) => {
 	return (
 		<svg
 			width='58'
@@ -8,6 +12,7 @@ const FolderIcon = () => {
 			xmlns='http://www.w3.org/2000/svg'
 		>
 			<path
+				className={className}
 				d='M41.4009 13.5853L28.157 10.0367C23.3532 8.74945 19.8025 10.8128 18.511 15.6325L14.1371 31.9562C12.8245 36.8549 14.8848 40.3539 19.6886 41.6411L32.9325 45.1898C37.8138 46.4978 41.2686 44.4765 42.5812 39.5778L46.9551 23.254C48.2465 18.4344 46.2822 14.8933 41.4009 13.5853Z'
 				fill='url(#paint0_linear_106_47)'
 			/>
@@ -74,7 +79,7 @@ const FolderIcon = () => {
 					filterUnits='userSpaceOnUse'
 					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -95,7 +100,7 @@ const FolderIcon = () => {
 					filterUnits='userSpaceOnUse'
 					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='7.5' />
 					<feComposite
 						in2='SourceAlpha'
@@ -118,7 +123,7 @@ const FolderIcon = () => {
 					filterUnits='userSpaceOnUse'
 					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feGaussianBlur in='BackgroundImageFix' stdDeviation='7.5' />
 					<feComposite
 						in2='SourceAlpha'

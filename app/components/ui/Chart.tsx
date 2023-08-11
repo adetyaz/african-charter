@@ -1,4 +1,26 @@
+'use client'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useRef, useEffect } from 'react'
+
+gsap.registerPlugin(ScrollTrigger)
+
 const Chart = () => {
+	const chartRef = useRef<SVGSVGElement>(null)
+
+	useEffect(() => {
+		gsap.from([chartRef.current?.children], {
+			opacity: 0,
+			stagger: 0.2,
+			duration: 0.2,
+			ease: 'Back.easeInOut',
+			scrollTrigger: {
+				trigger: '.tools',
+				start: 'top 100px',
+			},
+		})
+	}, [])
+
 	return (
 		<svg
 			width='657'
@@ -6,6 +28,7 @@ const Chart = () => {
 			viewBox='0 0 657 657'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
+			ref={chartRef}
 		>
 			<path
 				d='M628.315 413.867C637.113 416.37 642.257 425.548 639.312 434.209C626.389 472.222 606.579 507.586 580.826 538.511C555.073 569.436 523.879 595.319 488.832 614.909C480.847 619.372 470.89 615.975 466.836 607.775L408.843 490.485C404.788 482.286 408.204 472.421 415.953 467.561C430.595 458.377 443.722 446.917 454.827 433.583C465.931 420.249 474.826 405.264 481.207 389.202C484.585 380.701 493.668 375.557 502.466 378.06L628.315 413.867Z'

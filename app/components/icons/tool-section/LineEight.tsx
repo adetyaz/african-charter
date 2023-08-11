@@ -10,8 +10,8 @@ const LineEight = () => {
 			<path
 				d='M0.702881 1.67944H103.804L146.867 25.695'
 				stroke='#CDCDCD'
-				stroke-width='1.65625'
-				stroke-dasharray='1.66 1.66'
+				strokeWidth='1.65625'
+				strokeDasharray='1.66 1.66'
 			/>
 		</svg>
 	)

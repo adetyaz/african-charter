@@ -7,12 +7,11 @@ const Partners = () => {
 			<h2>Our Partners</h2>
 			<div className='partners__cards'>
 				{partners.map((partner) => (
-					<div className='partners__card'>
+					<div className='partners__card' key={partner.name}>
 						{partner.image && (
 							<Image
 								src={partner.image}
 								alt={partner.name}
-								key={partner.name}
 								height={30}
 								width={30}
 							/>

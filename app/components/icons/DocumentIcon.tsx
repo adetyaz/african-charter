@@ -1,4 +1,8 @@
-const DocumentIcon = () => {
+type Props = {
+	className: string
+}
+
+const DocumentIcon = ({ className }: Props) => {
 	return (
 		<svg
 			width='75'
@@ -8,6 +12,7 @@ const DocumentIcon = () => {
 			xmlns='http://www.w3.org/2000/svg'
 		>
 			<path
+				className={className}
 				d='M40.7733 14.1271L26.9395 17.8338C21.9216 19.1783 19.7873 22.8993 21.1362 27.9336L25.705 44.9845C27.076 50.1014 30.7672 52.1906 35.7851 50.8461L49.6189 47.1393C54.7176 45.7731 56.7871 42.1403 55.416 37.0234L50.8473 19.9726C49.4983 14.9382 45.872 12.7609 40.7733 14.1271Z'
 				fill='url(#paint0_linear_108_151)'
 			/>
@@ -182,7 +187,7 @@ const DocumentIcon = () => {
 					y2='46.0653'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='white' stop-opacity='0.25' />
+					<stop stopColor='white' stopOpacity='0.25' />
 					<stop offset='1' stopColor='white' stopOpacity='0' />
 				</linearGradient>
 			</defs>
